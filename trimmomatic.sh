@@ -34,4 +34,4 @@ for f in $files; do
     SLIDINGWINDOW:4:30 MINLEN:50 && mv ${f%%_R1*}_R1_001.fastq.gz ./done && mv ${f%%_R1*}_R2_001.fastq.gz ./done ; done ;
 
 #print memory, time reesources etc .. see if this ends up anywhere...
-/usr/bin/time -v ls
+#/usr/bin/time -v ls
