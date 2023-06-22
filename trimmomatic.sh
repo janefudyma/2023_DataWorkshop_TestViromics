@@ -17,6 +17,7 @@ files=*_R1_*
 #change into working directory
 cd raw
 
+
 # Do trimmomatic, PE = paired end
 # Scan the read with a 4-base wide sliding window,
 # cutting when the average quality per base drops below 30, minlenght = 50
@@ -33,4 +34,4 @@ for f in $files; do
     SLIDINGWINDOW:4:30 MINLEN:50 && mv ${f%%_R1*}_R1_001.fastq.gz ./done && mv ${f%%_R1*}_R2_001.fastq.gz ./done ; done ;
 
 #print memory, time reesources etc .. see if this ends up anywhere...
-/usr/bin/time -v ls 
+/usr/bin/time -v ls
